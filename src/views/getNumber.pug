@@ -1,0 +1,38 @@
+html
+    head
+        title= 'questions'
+        meta(charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0")
+    body
+        style.
+            #input1 {
+                width: 60%;
+                height: 50px;
+                background-color: tomato;
+                border-radius: 5px;
+                font-family: 'Pretendard';
+            }
+            #input2 {
+                width: 20%;
+                height: 50px;
+                background-color: gold;
+                border-radius: 5px;
+                font-family: 'Pretendard';
+            }
+            #img {
+                width:100%;
+                display:block;
+                margin-top:10px;
+                border-radius: 5px;
+            }
+            @font-face {
+                font-family:'Pretendard';
+                font-style:'normal';
+                src:url('./fonts/Pretendard-Regular.otf') format('otf');
+            }
+
+        form(action='/numberProcess' method='post')
+            p
+                center
+                    img(id="img" src="/images/jenga.jpg")
+            p
+                center

@@ -1,0 +1,37 @@
+html
+    head
+        title= 'questions'
+        meta(charset="utf-8")
+    body
+        style.
+            a {
+                display:block;
+                width:20%;
+                line-height:50px;
+                text-align:center;
+                background-color:#C24F7C;
+                color:#3db083;
+                font-family: 'Pretendard';
+            }
+            #img {
+                width:100%;
+                display:block;
+                margin-top:10px;
+                border-radius: 5px;
+            }
+            #span1 {
+                color:#3db083;
+                font-family: 'Pretendard';
+                font-size: 30px;
+            }
+            @font-face {
+                font-family:'Pretendard';
+                font-style:'normal';
+                src:url('./fonts/Pretendard-Regular.otf') format('otf');
+            }
+        a(href="/enterNumber") 돌아가기
+        p
+            center
+                img(id="img" src="/images/beaver.jpg")
+            center
+                span(id="span1") 이런이런~ 잘못 입력했군요! 돌아가주세요~~

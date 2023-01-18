@@ -1,0 +1,10 @@
+html
+    head
+        title= 'questions'
+        meta(charset="utf-8") 
+    body
+        form(action='/questionProcess' method='post')
+            p
+                center
+                    input(type="text" name="question" placeholder="enter question")
+                    input(type="submit" value="질문 제출!")

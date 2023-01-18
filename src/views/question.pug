@@ -1,0 +1,63 @@
+html
+    head
+        title= 'questions'
+        meta(charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0")
+    body
+
+        style.
+            #input1 {
+                width: 60%;
+                height: 50px;
+                background-color: tomato;
+                border-radius: 5px;
+                font-family: 'Pretendard';
+            }
+            #input2 {
+                width: 20%;
+                height: 50px;
+                background-color: gold;
+                border-radius: 5px;
+                font-family: 'Pretendard';
+            }
+            #span1 {
+                color: red;
+                font-family: 'Pretendard';
+                font-size: 15px;
+            }
+            #span2 {
+                color: blue;
+                font-family: 'Pretendard';
+                font-size: 15px;
+            }
+            #span3 {
+                color: green;
+                font-family: 'Pretendard';
+                font-size: 15px;
+            }
+            #img {
+                width:100%;
+                display:block;
+                margin-top:10px;
+                border-radius: 5px;
+            }
+            @font-face {
+                font-family:'Pretendard';
+                font-style:'normal';
+                src:url('./fonts/Pretendard-Regular.otf') format('otf');
+            }
+        form(action='/numberProcess' method='post')
+            p
+                center
+                    img(id="img" src="/images/jenga.jpg")
+            p
+                center
+                    input(id="input1" type="text" name="number" placeholder="숫자를 입력하세요")
+                    input(id="input2" type="submit" value="질문 확인!")
+        p
+            center
+                if remainder == 0
+                    span(id="span1")= question
+                else if remainder == 1
+                    span(id="span2")= question
+                else
+                    span(id="span3")= question
