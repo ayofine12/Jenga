@@ -5,10 +5,24 @@ html
     body
 
         style.
+            a {
+                text-decoration: none;
+                display:block;
+                width:20%;
+                line-height:40px;
+                text-align:center;
+                background-color:tomato;
+                color:white;
+                font-size:10px;
+                font-family: 'Pretendard';
+                border-radius: 5px;
+            }
             #input1 {
                 width: 60%;
                 height: 50px;
                 background-color: tomato;
+                color:white;
+                font-size:10px;
                 border-radius: 5px;
                 font-family: 'Pretendard';
             }
@@ -16,6 +30,8 @@ html
                 width: 20%;
                 height: 50px;
                 background-color: gold;
+                color:white;
+                font-size:10px;
                 border-radius: 5px;
                 font-family: 'Pretendard';
             }
@@ -45,10 +61,14 @@ html
                 font-style:'normal';
                 src:url('./fonts/Pretendard-Regular.otf') format('otf');
             }
+
+        a(href="/penalty") 벌칙확인
+
+        p
+            center
+                img(id="img" src="/images/jenga.jpg")
+
         form(action='/numberProcess' method='post')
-            p
-                center
-                    img(id="img" src="/images/jenga.jpg")
             p
                 center
                     input(id="input1" type="text" name="number" placeholder="숫자를 입력하세요")

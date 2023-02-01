@@ -1,17 +1,20 @@
 html
     head
-        title= 'questions'
-        meta(charset="utf-8")
+        title= 'wrongPage'
+        meta(charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0")
     body
         style.
             a {
+                text-decoration: none;
                 display:block;
                 width:20%;
-                line-height:50px;
+                line-height:40px;
                 text-align:center;
-                background-color:#C24F7C;
+                background-color:#c8daee;
                 color:#3db083;
+                font-size:10px;
                 font-family: 'Pretendard';
+                border-radius: 5px;
             }
             #img {
                 width:100%;
@@ -22,7 +25,7 @@ html
             #span1 {
                 color:#3db083;
                 font-family: 'Pretendard';
-                font-size: 30px;
+                font-size: 15px;
             }
             @font-face {
                 font-family:'Pretendard';
@@ -32,6 +35,6 @@ html
         a(href="/enterNumber") 돌아가기
         p
             center
-                img(id="img" src="/images/beaver.jpg")
+                img(id="img" src="/images/beaver.png")
             center
                 span(id="span1") 이런이런~ 잘못 입력했군요! 돌아가주세요~~

@@ -47,6 +47,10 @@ app.post('/numberProcess', (req, res) => {
     }
 });
 
+app.get('/penalty', (req, res) => {
+    res.render('penaltyPage');
+});
+
 app.use((err, req, res, next) => {
     console.error(err);
     res.status(500).send('Something broke!');
